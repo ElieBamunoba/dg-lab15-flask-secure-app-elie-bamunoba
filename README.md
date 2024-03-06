@@ -48,6 +48,9 @@ python app.py
 - `/receive_post_data`: Endpoint to receive and print POST data.
 - `/sample_get_endpoint`: Provides a sample response with a secret from the environment variable.
 
+## Contact
+For any issues or questions, please contact Elie at eliebamunoba@gmail.com
+
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
