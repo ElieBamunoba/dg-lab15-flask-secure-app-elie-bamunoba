@@ -13,6 +13,18 @@ variable_value = os.getenv("MY_SECRET_KEY")
 def hello_world():
     return '<h1>Hello, GitHub! From Elie</h1>'
 
+# POST endpoint to receive GitHub webhook events
+@app.route('/hook', methods=['POST'])
+def github_webhook():
+    data = request.get_json()
+
+    if data:
+        print("Received GitHub webhook payload:")
+        print(data)
+        return "Webhook received successfully!"
+    else:
+        return "No data received."
+
 # POST endpoint to receive and print POST data
 @app.route('/receive_post_data', methods=['POST'])
 def receive_post_data():
