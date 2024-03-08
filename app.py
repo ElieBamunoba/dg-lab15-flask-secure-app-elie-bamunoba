@@ -42,6 +42,4 @@ def sample_get_endpoint():
     return jsonify(response)
 
 if __name__ == '__main__':
-    # Bind to '0.0.0.0' to make it accessible externally
-    # Use a specific port, for example, 5000
     app.run(host='0.0.0.0', port=8000, debug=True)
